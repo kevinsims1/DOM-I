@@ -86,3 +86,19 @@ contactContent[2].textContent = siteContent["contact"]["email"];
 
 const footer = document.querySelector("footer p");
 footer.textContent = siteContent.footer["copyright"];
+
+let nav2 = document.querySelector("nav")
+
+const newElement = document.createElement("a");
+newElement.textContent = "Hey";
+newElement.href = "#";
+
+const newElement2 = document.createElement("a");
+newElement2.textContent = "YO";
+newElement2.href = "#";
+
+nav2.prepend(newElement);
+nav2.appendChild(newElement2);
+
+
+
