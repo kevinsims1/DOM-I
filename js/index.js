@@ -47,6 +47,8 @@ nav[1].textContent = siteContent["nav"]["nav-item-2"];
 nav[2].textContent = siteContent["nav"]["nav-item-3"];
 nav[3].textContent = siteContent["nav"]["nav-item-4"];
 nav[4].textContent = siteContent["nav"]["nav-item-5"];
+nav.forEach(function(element){
+  element.style.color = "green"});
 
 const ctaText = document.querySelector(".cta-text h1");
 ctaText.textContent = siteContent["cta"]["h1"];
@@ -74,13 +76,13 @@ topCont[4].textContent = siteContent["main-content"]["vision-content"];
 const topContIMG = document.getElementById("middle-img");
 topContIMG.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-const contactHeader = document.getElementById("contact");
+const contactHeader = document.querySelector(".contact h4");
 contactHeader.textContent = siteContent["contact"]["contact-h4"];
 
 const contactContent = document.querySelectorAll(".contact p");
-contactContent[0].textContent = siteContent.contact["address"];
-contactContent[1].textContent = siteContent.contact["phone"];
-contactContent[2].textContent = siteContent.contact["email"];
+contactContent[0].textContent = siteContent["contact"]["address"];
+contactContent[1].textContent = siteContent["contact"]["phone"];
+contactContent[2].textContent = siteContent["contact"]["email"];
 
 const footer = document.querySelector("footer p");
 footer.textContent = siteContent.footer["copyright"];
