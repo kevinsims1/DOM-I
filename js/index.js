@@ -71,3 +71,16 @@ topCont[2].textContent = siteContent["main-content"]["services-content"];
 topCont[3].textContent = siteContent["main-content"]["product-content"];
 topCont[4].textContent = siteContent["main-content"]["vision-content"];
 
+const topContIMG = document.getElementById("middle-img");
+topContIMG.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+const contactHeader = document.getElementById("contact");
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
+
+const contactContent = document.querySelectorAll(".contact p");
+contactContent[0].textContent = siteContent.contact["address"];
+contactContent[1].textContent = siteContent.contact["phone"];
+contactContent[2].textContent = siteContent.contact["email"];
+
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent.footer["copyright"];
